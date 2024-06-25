@@ -10,8 +10,8 @@ import com.example.examen.entity.Libro;
 public interface LibroRepository extends MongoRepository<Libro, Integer> {
     
 
-    @Query("{ 'authors' : { $in: ?0 } }")
-    public abstract List<Libro> listaPorAutores(List<String> authors);
+    @Query("{ 'categories' : { $in: ?0 } }")
+    public abstract List<Libro> listaPorAutores(List<String> categories);
 
     
 }

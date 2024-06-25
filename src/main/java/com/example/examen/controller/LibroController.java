@@ -22,7 +22,7 @@ public class LibroController {
     
     @GetMapping("/listaLibroPorAutores")
 	@ResponseBody
-	public List<Libro> lista(@RequestParam("authors") List<String> authors) {
-        return service.listaPorAutores(authors);
+	public List<Libro> lista(@RequestParam("categories") List<String> categories) {
+        return service.listaPorAutores(categories);
 	}
 }

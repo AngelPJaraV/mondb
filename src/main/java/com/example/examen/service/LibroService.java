@@ -6,5 +6,5 @@ import com.example.examen.entity.Libro;
 
 public interface LibroService {
     
-     public abstract List<Libro> listaPorAutores(List<String> authors);
+     public abstract List<Libro> listaPorAutores(List<String> categories);
 }

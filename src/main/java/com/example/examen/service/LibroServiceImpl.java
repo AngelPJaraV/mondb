@@ -15,7 +15,7 @@ public class LibroServiceImpl implements LibroService {
     private LibroRepository repository;
     
     @Override
-    public List<Libro> listaPorAutores(List<String> authors) {
-        return repository.listaPorAutores(authors);
+    public List<Libro> listaPorAutores(List<String> categories) {
+        return repository.listaPorAutores(categories);
     }
 }
